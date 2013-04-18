@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>
+      <name>dfs.replication</name>
+      <value>1</value>
+    </property>
+    <property>
+      <name>dfs.permissions</name>
+      <value>false</value>
+    </property>
+    <property>
+      <name>dfs.name.dir</name>
+      <value>/usr/local/hadoop/hadoop-1.0.4/data/dfs/nn</value>
+    </property>
+    <property>
+      <name>dfs.data.dir</name>
+      <value>/usr/local/hadoop/hadoop-1.0.4/data/dfs/dn</value>
+    </property>
+    <property>
+      <name>dfs.safemode.extension</name>
+      <value>0</value>
+    </property>
+    <property>
+      <name>dfs.block.size</name>
+      <value>16777216</value>
+    </property>
+</configuration>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>
+      <name>mapred.job.tracker</name>
+      <value>localhost:8021</value>
+    </property>
+    <property>
+      <name>mapred.child.java.opts</name>
+      <value>-Xmx100m</value>
+    </property>
+    <property>
+      <name>mapred.local.dir</name>
+      <value>/usr/local/hadoop/hadoop-1.0.4/data/mapred/local</value>
+    </property>
+    <property>
+      <name>mapred.map.tasks</name>
+      <value>1</value>
+    </property>
+    <property>
+      <name>mapred.tasktracker.map.tasks.maximum</name>
+      <value>2</value>
+    </property>
+    <property>
+      <name>mapred.tasktracker.reduce.tasks.maximum</name>
+      <value>1</value>
+    </property>
+    <property>
+      <name>mapred.job.tracker.retiredjobs.cache.size</name>
+      <value>15</value>
+    </property>
+    <property>
+      <name>io.sort.mb</name>
+      <value>25</value>
+    </property>
+    <property>
+      <name>mapred.submit.replication</name>
+      <value>1</value>
+    </property>
+</configuration>
