@@ -1,7 +1,6 @@
 
 
 
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;
@@ -24,7 +23,6 @@ public class TestMultipleOutputDriver {
 		job.setReducerClass(TestMultipleOutputReducer.class);
 		
 		job.setInputFormatClass(KeyValueTextInputFormat.class);
-		job.setOutputFormatClass(NullOutputFormat.class);
 
 		FileInputFormat.setInputPaths(job, new Path(args[0]));
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));
