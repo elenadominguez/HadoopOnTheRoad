@@ -31,7 +31,7 @@ public class WordCounterDriver extends Configured implements Tool{
 		job.setReducerClass(WordCounterReducer.class);
 
 		FileInputFormat.setInputPaths(job, new Path("pruebas/score.txt"));
-		FileOutputFormat.setOutputPath(job, new Path("pruebas/out3"));
+		FileOutputFormat.setOutputPath(job, new Path("pruebas/out5"));
 		
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(IntWritable.class);
